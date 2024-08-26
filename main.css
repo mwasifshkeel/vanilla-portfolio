@@ -458,6 +458,7 @@ p {
 .resumedownload {
     color: white;
     background-color: black;
+    border: 1px solid transparent;
     padding: 20px;
     width: 120px;
     transition: 0.5s;
@@ -466,7 +467,7 @@ p {
 
 .resumedownload:hover {
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: white;
     padding: 20px;
 }
