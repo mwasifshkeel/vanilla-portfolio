@@ -617,6 +617,26 @@ p {
         height: 500px;
     }
 
+    .projectbox{
+        gap: 10px;
+    }
+
+    .projectbox h2{
+        font-size: 20px;
+    }
+
+    .projectdetails{
+        gap: 5px;
+    }
+
+    .projectheading{
+        font-size: 17px;
+    }
+
+    .projectdetails h3{
+        font-size: 16px;
+    }
+
     .description{
         font-size: 1.5vw;
     }
@@ -841,15 +861,15 @@ p {
     }
 
     .btn-project {
-        height: 4vw;
+        height: 6vw;
     }
     
     .btn-project p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .btn-project i {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     
