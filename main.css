@@ -180,19 +180,19 @@ p {
 
 @keyframes fillAnimation {
     to {
-        width: 75%;
+        width: 90%;
     }
 }
 
 @keyframes fillAnimation2 {
     to {
-        width: 50%;
+        width: 75%;
     }
 }
 
 @keyframes fillAnimation3 {
     to {
-        width: 25%;
+        width: 60%;
     }
 }
 
