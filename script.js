@@ -16,6 +16,25 @@ window.addEventListener("scroll", () => {
 
     lastScroll = currentScroll;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const popup = document.getElementById('redirectPopup');
+  const redirectBtn = document.getElementById('redirectBtn');
+  const stayBtn = document.getElementById('stayBtn');
+  
+  popup.style.display = 'flex';
+  
+  redirectBtn.addEventListener('click', function() {
+    window.location.href = 'https://portfolio-mwasifshkeel.vercel.app/';
+  });
+  
+  stayBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const triggerElement = document.querySelector('#wsf_pf_s4');
     const element = document.querySelector('#wsf_pf_s4 h1');

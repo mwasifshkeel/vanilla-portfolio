@@ -600,6 +600,102 @@ p {
     background-color: rgb(173, 171, 171);
 }
 
+.redirect-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.redirect-modal {
+    background-color: #F7F4EA;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+.redirect-modal h2 {
+    color: rgb(59, 22, 50);
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.redirect-modal p {
+    color: rgb(85, 22, 85);
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.redirect-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.redirect-btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.redirect-btn.primary {
+    background-color: rgb(59, 22, 50);
+    color: white;
+}
+
+.redirect-btn.primary:hover {
+    background-color: rgb(112, 56, 99);
+}
+
+.redirect-btn.secondary {
+    background-color: #DED9E2;
+    color: rgb(59, 22, 50);
+    border: 1px solid rgb(59, 22, 50);
+}
+
+.redirect-btn.secondary:hover {
+    background-color: #C0B9DD;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+    .redirect-modal {
+        padding: 20px;
+    }
+    
+    .redirect-modal h2 {
+        font-size: 20px;
+    }
+    
+    .redirect-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .redirect-buttons {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:2500px) and (min-width:1500px) {
     .skillgrid {
         gap: 3vw;
